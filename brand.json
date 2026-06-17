@@ -1,0 +1,74 @@
+{
+  "$comment": "Machine-readable CipheX brand manifest. For humans, see README.md; for the authoritative rules, see the CipheX Brand Design Guide. For AI/LLM consumption, see llms.txt. Transcribed from the guide — if anything here disagrees with it, the guide wins.",
+  "schemaVersion": "1.0",
+  "brand": {
+    "name": "CipheX",
+    "parent": "Cipherion",
+    "tagline": "Digital finance meets traditional finance.",
+    "description": "CipheX is capital-markets infrastructure for the tokenized economy, bridging traditional finance and digital assets. The ecosystem is pre-commercial, with target timelines in 2026–2027.",
+    "website": "https://ciphex.io",
+    "stage": "pre-commercial"
+  },
+  "personality": ["Institutional", "Precise", "Forward"],
+  "voice": {
+    "principle": "Write like an operator, not a crypto promoter.",
+    "tone": "Confident, plain, factual.",
+    "do": [
+      "Lead with operating language.",
+      "State numbers plainly, with qualification.",
+      "Use the mixed-typeface headline: a sans line with one italic emphasis phrase."
+    ],
+    "dont": [
+      "Hype, vaporware language, or 'to the moon' framing.",
+      "Crypto-promoter tone.",
+      "More than one or two emphasized moments per layout."
+    ]
+  },
+  "ecosystem": [
+    { "mark": "CipheX", "role": "Master brand", "note": "The lead wordmark; everything ladders up to it." },
+    { "mark": "CPX", "role": "ERC-20 token", "note": "Ecosystem & utility token — access, incentives, liquidity coordination." },
+    { "mark": "CipheX Alpha", "role": "Execution", "note": "Autonomous execution & portfolio management via the Abigail system. Non-custodial." },
+    { "mark": "Atlas", "role": "RWA", "note": "Real-world asset origination, tokenization & global distribution." },
+    { "mark": "Cipherion", "role": "Parent", "note": "The infrastructure brand credited beneath the ecosystem." }
+  ],
+  "logo": {
+    "lead": "Master CipheX wordmark",
+    "avatar": "X-monogram",
+    "productMarksUse": "in-context only",
+    "clearSpace": "1× the mark height on all sides",
+    "minSize": { "wordmark": "96px digital / 25mm print", "monogram": "24px digital / 6mm print" },
+    "misuse": ["recolor", "stretch", "add effects", "rotate", "busy grounds", "rebuild in type"]
+  },
+  "color": {
+    "rule": "Warm cream grounds, one institutional-blue accent used decisively. Never pure white or pure black. Status colors are functional/data-viz only, never brand accents.",
+    "tokens": "tokens/tokens.json",
+    "accent": "#0050d6",
+    "grounds": { "light": "#fbfaf6", "dark": "#0a0c10" },
+    "ink": "#1c1e24",
+    "darkText": "cream (#fbfaf6) stepped down in opacity — 0.92 / 0.72 / 0.55 / 0.45, never grey"
+  },
+  "typography": {
+    "rule": "Three voices, one system — they take turns, never compete. All open-source.",
+    "sans": { "family": "Geist", "role": "Digital voice — body, UI labels, the sans lead-in of headlines." },
+    "serif": { "family": "Merriweather", "role": "Traditional-finance voice — the italic emphasis phrase, editorial titles, large stat figures." },
+    "mono": { "family": "Geist Mono", "role": "Terminal voice — eyebrows, tags, data labels, dates, meta. Always uppercase." }
+  },
+  "imagery": {
+    "rule": "Geometry and data, never stock crypto.",
+    "favor": ["restrained architectural imagery", "structured data-viz", "abstract geometry", "the token device", "cream-on-navy or blue fields"],
+    "avoid": ["gold coins / bullion", "hooded 'hacker' figures", "glowing circuit boards", "neon cyber cities", "'to the moon' rockets", "glassmorphism"]
+  },
+  "assets": {
+    "wordmark": "assets/logo/",
+    "monogram": "assets/symbol/",
+    "productMarks": "assets/badges/",
+    "parentMark": "assets/cipherion/",
+    "favicon": "assets/favicon/",
+    "tokens": "tokens/"
+  },
+  "compliance": {
+    "rule": "Route all copy through brand review before publishing.",
+    "contact": "brand@ciphex.io"
+  },
+  "license": "Proprietary — see LICENSE."
+}

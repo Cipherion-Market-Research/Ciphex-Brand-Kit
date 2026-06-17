@@ -1,0 +1,54 @@
+/**
+ * CipheX Tailwind v4 theme preset.
+ * Import after Tailwind to expose brand tokens as utilities
+ * (bg-cpx-cream, text-cpx-blue, font-cpx-mono, …).
+ *
+ *   @import "tailwindcss";
+ *   @import "ciphex-brand-kit/tokens/tailwind.css";
+ *
+ * Generated from tokens.json. For plain CSS vars use variables.css instead.
+ */
+
+@theme {
+  /* Brand blue — one accent, used decisively */
+  --color-cpx-blue: #0050d6;
+  --color-cpx-blue-deep: #003fa8;
+  --color-cpx-blue-soft: #5b9dff;
+  --color-cpx-blue-glow: #4d8fff;
+
+  /* Warm grounds & panels (light) */
+  --color-cpx-cream: #fbfaf6;
+  --color-cpx-surface: #f0ede4;
+  --color-cpx-sand: #e8e2d6;
+
+  /* Ink (text on cream) */
+  --color-cpx-ink: #1c1e24;
+  --color-cpx-ink-body: #3a3528;
+  --color-cpx-ink-muted: #6b6552;
+  --color-cpx-ink-subtle: #756f5e;
+
+  /* Dark grounds */
+  --color-cpx-dark: #0a0c10;
+  --color-cpx-dark-panel: #0c0e13;
+  --color-cpx-dark-product: #0d0f14;
+  --color-cpx-dark-navy: #060d1e;
+  --color-cpx-dark-deepest: #04080f;
+
+  /* Status — functional / data-viz only, never brand accents */
+  --color-cpx-amber: #d29922;
+  --color-cpx-gold: #836a1c;
+  --color-cpx-success: #3fb950;
+  --color-cpx-danger: #c0392b;
+  --color-cpx-teal: #00a67e;
+  --color-cpx-violet: #5b2be2;
+
+  /* Type families */
+  --font-cpx-sans: "Geist", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-cpx-serif: "Merriweather", Georgia, Cambria, "Times New Roman", serif;
+  --font-cpx-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Display heading tracking / leading */
+  --tracking-cpx-display: -0.03em;
+  --tracking-cpx-mono: -0.14em;
+  --leading-cpx-display: 1.05;
+}

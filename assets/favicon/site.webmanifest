@@ -1,0 +1,11 @@
+{
+  "name": "CipheX",
+  "short_name": "CipheX",
+  "icons": [
+    { "src": "favicon-180.png", "sizes": "180x180", "type": "image/png", "purpose": "any" },
+    { "src": "favicon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "theme_color": "#0a0c10",
+  "background_color": "#fbfaf6",
+  "display": "standalone"
+}

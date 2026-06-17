@@ -1,0 +1,17 @@
+/**
+ * CipheX web fonts — Geist, Geist Mono, Merriweather (all open-source).
+ *
+ *   @import "ciphex-brand-kit/tokens/fonts.css";
+ *
+ * This loads the fonts from Google Fonts for convenience. For production,
+ * self-host the families (see the `geist` npm package and the Merriweather
+ * OFL release) to avoid a third-party request and to control performance.
+ * After importing, the families resolve via the stacks in variables.css /
+ * tailwind.css (var(--cpx-font-sans), etc.).
+ */
+
+/* Geist + Geist Mono (variable) */
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@300..800&display=swap");
+
+/* Merriweather (regular + italic, for the emphasis phrase and stat figures) */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap");

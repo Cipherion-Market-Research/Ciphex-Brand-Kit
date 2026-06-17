@@ -1,0 +1,40 @@
+{
+  "name": "@ciphex/brand-kit",
+  "version": "1.0.0",
+  "description": "Official CipheX brand assets and design tokens — logos, marks, colors, and typography.",
+  "homepage": "https://github.com/Cipherion-Market-Research/Ciphex-Brand-Kit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cipherion-Market-Research/Ciphex-Brand-Kit.git"
+  },
+  "bugs": { "email": "brand@ciphex.io" },
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Ciphex",
+  "publishConfig": { "access": "restricted" },
+  "type": "module",
+  "sideEffects": ["*.css"],
+  "files": [
+    "assets",
+    "tokens",
+    "brand.json",
+    "llms.txt",
+    "LICENSE",
+    "README.md"
+  ],
+  "exports": {
+    "./brand": "./brand.json",
+    "./tokens": "./tokens/tokens.json",
+    "./css": "./tokens/variables.css",
+    "./scss": "./tokens/variables.scss",
+    "./tailwind": "./tokens/tailwind.css",
+    "./fonts": "./tokens/fonts.css",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build:tokens": "style-dictionary build --config tokens/style-dictionary.config.json"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.3.0"
+  },
+  "keywords": ["ciphex", "cipherion", "brand", "design-tokens", "design-system", "logo"]
+}

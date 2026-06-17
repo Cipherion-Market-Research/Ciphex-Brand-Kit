@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CipheX Brand Kit</title>
+  <meta name="description" content="Official CipheX brand assets, marks, color, and type — the single source of truth." />
+
+  <!-- Favicons (repo paths) -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any" />
+  <link rel="icon" href="assets/favicon/favicon-512.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/favicon/favicon-180.png" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+  <!-- Fonts: CDN for zero-config Pages. To use the repo's local fonts instead,
+       remove these three links and re-add: <link rel="stylesheet" href="tokens/fonts.css" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+
+  <style>
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{margin:0;background:#fbfaf6;color:#1c1e24;font-family:Geist,system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;}
+    img{display:block;}
+    a{color:inherit;}
+    ::selection{background:#0050d6;color:#fbfaf6;}
+    @keyframes cpxRise{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+
+    /* Interactive states (inline styles cover the rest) */
+    .navlink{transition:color .15s ease;}
+    .navlink:hover{color:#fbfaf6;}
+    .navcta{transition:background .18s ease,color .18s ease;}
+    .navcta:hover{background:#fbfaf6;}
+    .btnp{transition:transform .18s ease,background .18s ease;}
+    .btnp:hover{background:#003fa8;transform:translateY(-2px);}
+    .btng{transition:border-color .18s ease,background .18s ease;}
+    .btng:hover{border-color:rgba(251,250,246,0.5);background:rgba(255,255,255,0.04);}
+    .sw{transition:transform .12s ease,border-color .12s ease;}
+    .sw:hover{transform:translateY(-2px);border-color:#0050d6;}
+    .dl{transition:opacity .15s ease;}
+    .dl:hover{opacity:0.6;}
+    .footlink:hover{color:#fbfaf6 !important;}
+    .codelink:hover{color:#fbfaf6 !important;}
+  </style>
+</head>
+<body>
+
+<!-- ===== STICKY NAV ===== -->
+<nav style="position:sticky;top:0;z-index:50;background:rgba(10,12,16,0.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,0.08);">
+  <div style="max-width:1140px;margin:0 auto;padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;">
+    <a href="#top" style="display:flex;align-items:center;text-decoration:none;"><img src="assets/logo/ciphex-wordmark-white.svg" alt="CipheX" style="height:36px;width:auto;" /></a>
+    <div style="display:flex;align-items:center;gap:30px;">
+      <a class="navlink" href="#logos" style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(251,250,246,0.7);text-decoration:none;">Logos</a>
+      <a class="navlink" href="#color" style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(251,250,246,0.7);text-decoration:none;">Color</a>
+      <a class="navlink" href="#type" style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(251,250,246,0.7);text-decoration:none;">Type</a>
+      <a class="navlink" href="#voice" style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(251,250,246,0.7);text-decoration:none;">Voice</a>
+      <a class="navlink" href="#build" style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(251,250,246,0.7);text-decoration:none;">Build</a>
+      <a class="navcta" href="https://github.com/Cipherion-Market-Research/Ciphex-Brand-Kit" style="font-family:Geist,sans-serif;font-weight:500;font-size:13px;letter-spacing:-0.01em;color:#0a0c10;background:#5b9dff;padding:8px 15px;border-radius:8px;text-decoration:none;white-space:nowrap;">Get the kit</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header id="top" style="position:relative;overflow:hidden;background:#0a0c10;color:#fbfaf6;">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.045) 1px,transparent 1px);background-size:30px 30px;pointer-events:none;"></div>
+  <div style="position:absolute;right:-180px;top:46%;transform:translateY(-50%);width:760px;height:760px;background:radial-gradient(ellipse 56% 76% at 70% 50%,rgba(0,80,214,0.20),transparent 70%);pointer-events:none;"></div>
+  <!-- X-monogram watermark -->
+  <div style="position:absolute;right:24px;top:50%;transform:translateY(-50%);width:440px;height:440px;opacity:0.06;pointer-events:none;filter:invert(1);"><img src="assets/symbol/ciphex-symbol.svg" alt="" style="width:100%;height:100%;" /></div>
+  <div style="position:relative;max-width:1140px;margin:0 auto;padding:118px 32px 104px;">
+    <div style="max-width:820px;animation:cpxRise 0.7s cubic-bezier(0.16,1,0.3,1) both;">
+      <div style="display:flex;align-items:center;gap:13px;margin-bottom:26px;">
+        <span style="width:32px;height:1px;background:rgba(251,250,246,0.32);display:block;"></span>
+        <span style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.18em;font-size:11px;color:#5b9dff;">CipheX · Brand Kit</span>
+      </div>
+      <h1 style="margin:0;font-family:Geist,sans-serif;font-weight:600;letter-spacing:-0.03em;line-height:1.03;font-size:clamp(44px,6.4vw,74px);">Brand &amp; identity assets for the <span style="font-family:Merriweather,serif;font-weight:400;font-style:italic;color:#5b9dff;">tokenized economy</span></h1>
+      <p style="margin:30px 0 0;font-size:18px;line-height:1.62;color:rgba(251,250,246,0.72);max-width:580px;">Official logos, marks, color, and type for CipheX, an ecosystem by Cipherion. This is the single source of truth, grab the files here; the rules live in the Brand Design Guide.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:13px;margin-top:38px;">
+        <a class="btnp" href="https://github.com/Cipherion-Market-Research/Ciphex-Brand-Kit" style="display:inline-flex;align-items:center;gap:9px;font-family:Geist,sans-serif;font-weight:500;font-size:15px;letter-spacing:-0.01em;color:#fbfaf6;background:#0050d6;padding:14px 22px;border-radius:10px;text-decoration:none;white-space:nowrap;">Download the brand kit <span style="font-family:'Geist Mono',monospace;font-size:13px;">↗</span></a>
+        <a class="btng" href="ciphex-brand-design-guide.pdf" style="display:inline-flex;align-items:center;gap:9px;font-family:Geist,sans-serif;font-weight:500;font-size:15px;letter-spacing:-0.01em;color:#fbfaf6;background:transparent;border:1px solid rgba(251,250,246,0.22);padding:14px 22px;border-radius:10px;text-decoration:none;white-space:nowrap;">Read the design guide</a>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:36px;">
+        <span style="font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(251,250,246,0.55);border:1px solid rgba(255,255,255,0.12);border-radius:999px;padding:6px 13px;">SVG + PNG marks</span>
+        <span style="font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(251,250,246,0.55);border:1px solid rgba(255,255,255,0.12);border-radius:999px;padding:6px 13px;">Geist · Merriweather</span>
+        <span style="font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(251,250,246,0.55);border:1px solid rgba(255,255,255,0.12);border-radius:999px;padding:6px 13px;">Design tokens · v1.0</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== LOGO SYSTEM ===== -->
+<section id="logos" style="max-width:1140px;margin:0 auto;padding:88px 32px 64px;scroll-margin-top:72px;">
+  <div style="display:flex;align-items:center;gap:13px;margin-bottom:16px;"><span style="width:30px;height:1px;background:#bdb59b;display:block;"></span><span style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.16em;font-size:11px;color:#6b6552;">Logo system</span></div>
+  <h2 style="margin:0;font-family:Geist,sans-serif;font-weight:600;font-size:clamp(28px,4vw,40px);letter-spacing:-0.03em;line-height:1.08;max-width:760px;">One family of <span style="font-family:Merriweather,serif;font-weight:400;font-style:italic;color:#0050d6;">marks</span></h2>
+  <p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#3a3528;max-width:600px;">The master wordmark leads. The X-monogram is the standalone avatar. Product marks are used in-context only, and Cipherion is the quiet parent endorsement.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:34px;">
+    <div style="display:flex;flex-direction:column;">
+      <div style="border:1px solid #d8d2c0;border-radius:14px;background:#fbfaf6;min-height:188px;display:flex;align-items:center;justify-content:center;padding:34px;"><img src="assets/logo/ciphex-wordmark-black.svg" alt="CipheX wordmark, ink on cream" style="max-width:78%;max-height:46px;" /></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:12px;"><span style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;font-size:11px;color:#6b6552;">Wordmark · primary</span><a class="dl" href="assets/logo/ciphex-wordmark-black.svg" download style="font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.08em;color:#0050d6;text-decoration:none;">↓ SVG</a></div>
+    </div>
+    <div style="display:flex;flex-direction:column;">
+      <div style="border:1px solid #1b2030;border-radius:14px;background:#0a0c10;min-height:188px;display:flex;align-items:center;justify-content:center;padding:34px;"><img src="assets/logo/ciphex-wordmark-white.svg" alt="CipheX wordmark, cream on dark" style="max-width:78%;max-height:46px;" /></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:12px;"><span style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;font-size:11px;color:#6b6552;">Wordmark · reversed</span><a class="dl" href="assets/logo/ciphex-wordmark-white.svg" download style="font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.08em;color:#0050d6;text-decoration:none;">↓ SVG</a></div>
+    </div>
+    <div style="display:flex;flex-direction:column;">
+      <div style="border:1px solid #d8d2c0;border-radius:14px;background:#f0ede4;min-height:188px;display:flex;align-items:center;justify-content:center;padding:34px;"><img src="assets/symbol/ciphex-symbol.svg" alt="CipheX X-monogram" style="width:108px;height:108px;" /></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:12px;"><span style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;font-size:11px;color:#6b6552;">X-monogram · avatar</span><a class="dl" href="assets/symbol/ciphex-symbol.svg" download style="font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.08em;color:#0050d6;text-decoration:none;">↓ SVG</a></div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-top:18px;">
+    <div style="display:flex;flex-direction:column;">
+      <div style="border:1px solid #1b2030;border-radius:14px;background:#0c0e13;min-height:150px;display:flex;align-items:center;justify-content:center;padding:24px;"><img src="assets/badges/ciphex-badge-token.svg" alt="CPX token mark" style="width:72px;height:72px;" /></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:12px;"><span style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;font-size:11px;color:#6b6552;">CPX token</span><a class="dl" href="assets/badges/ciphex-badge-token.svg" download style="font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.08em;color:#0050d6;text-decoration:none;">↓ SVG</a></div>
+    </div>
+    <div style="display:flex;flex-direction:column;">
+      <div style="border:1px solid #d8d2c0;border-radius:14px;background:#f0ede4;min-height:150px;display:flex;align-items:center;justify-content:center;padding:24px;"><img src="assets/badges/ciphex-badge-alpha.svg" alt="CipheX Alpha mark" style="width:72px;height:72px;" /></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:12px;"><span style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;font-size:11px;color:#6b6552;">CipheX Alpha</span><a class="dl" href="assets/badges/ciphex-badge-alpha.svg" download style="font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.08em;color:#0050d6;text-decoration:none;">↓ SVG</a></div>
+    </div>
+    <div style="display:flex;flex-direction:column;">
+      <div style="border:1px solid #1b2030;border-radius:14px;background:#0c0e13;min-height:150px;display:flex;align-items:center;justify-content:center;padding:24px;"><img src="assets/badges/ciphex-badge-atlas.svg" alt="Atlas mark" style="width:72px;height:72px;" /></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:12px;"><span style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;font-size:11px;color:#6b6552;">Atlas</span><a class="dl" href="assets/badges/ciphex-badge-atlas.svg" download style="font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.08em;color:#0050d6;text-decoration:none;">↓ SVG</a></div>
+    </div>
+    <div style="display:flex;flex-direction:column;">
+      <div style="border:1px solid #d8d2c0;border-radius:14px;background:#f0ede4;min-height:150px;display:flex;align-items:center;justify-content:center;padding:24px;"><img src="assets/cipherion/cipherion-mark.svg" alt="Cipherion parent mark" style="width:72px;height:72px;" /></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:12px;"><span style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;font-size:11px;color:#6b6552;">Cipherion · parent</span><a class="dl" href="assets/cipherion/cipherion-mark.svg" download style="font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.08em;color:#0050d6;text-decoration:none;">↓ SVG</a></div>
+    </div>
+  </div>
+  <p style="margin:22px 0 0;font-size:13.5px;color:#756f5e;line-height:1.6;">Minimum sizes: wordmark 96px / 25mm, monogram 24px / 6mm. Keep 1× the mark height of clear space on all sides. Never recolor, stretch, rotate, add effects, or place the light logo on light grounds — see the guide&rsquo;s misuse gallery.</p>
+</section>
+
+<!-- ===== COLOR ===== -->
+<section id="color" style="max-width:1140px;margin:0 auto;padding:48px 32px 64px;scroll-margin-top:72px;">
+  <div style="display:flex;align-items:center;gap:13px;margin-bottom:16px;"><span style="width:30px;height:1px;background:#bdb59b;display:block;"></span><span style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.16em;font-size:11px;color:#6b6552;">Color</span></div>
+  <h2 style="margin:0;font-family:Geist,sans-serif;font-weight:600;font-size:clamp(28px,4vw,40px);letter-spacing:-0.03em;line-height:1.08;max-width:780px;">Warm cream, one committed <span style="font-family:Merriweather,serif;font-weight:400;font-style:italic;color:#0050d6;">institutional blue</span></h2>
+  <p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#3a3528;max-width:620px;">Cream grounds, a single blue accent used decisively. Click any swatch to copy its hex.</p>
+
+  <div id="palette">
+    <div style="font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#0050d6;margin:30px 0 14px;">Core</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;">
+      <button class="sw" data-hex="#fbfaf6" style="border:1px solid #d8d2c0;border-radius:12px;overflow:hidden;cursor:pointer;background:#fbfaf6;text-align:left;padding:0;font:inherit;color:inherit;"><div style="height:74px;background:#fbfaf6;border-bottom:1px solid #d8d2c0;"></div><div style="padding:10px 12px;"><div style="font-size:13px;font-weight:500;">Cream Ground</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#6b6552;">#fbfaf6</div></div></button>
+      <button class="sw" data-hex="#f0ede4" style="border:1px solid #d8d2c0;border-radius:12px;overflow:hidden;cursor:pointer;background:#fbfaf6;text-align:left;padding:0;font:inherit;color:inherit;"><div style="height:74px;background:#f0ede4;"></div><div style="padding:10px 12px;"><div style="font-size:13px;font-weight:500;">Surface</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#6b6552;">#f0ede4</div></div></button>
+      <button class="sw" data-hex="#e8e2d6" style="border:1px solid #d8d2c0;border-radius:12px;overflow:hidden;cursor:pointer;background:#fbfaf6;text-align:left;padding:0;font:inherit;color:inherit;"><div style="height:74px;background:#e8e2d6;"></div><div style="padding:10px 12px;"><div style="font-size:13px;font-weight:500;">Sand</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#6b6552;">#e8e2d6</div></div></button>
+      <button class="sw" data-hex="#1c1e24" style="border:1px solid #d8d2c0;border-radius:12px;overflow:hidden;cursor:pointer;background:#fbfaf6;text-align:left;padding:0;font:inherit;color:inherit;"><div style="height:74px;background:#1c1e24;"></div><div style="padding:10px 12px;"><div style="font-size:13px;font-weight:500;">Ink Primary</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#6b6552;">#1c1e24</div></div></button>
+      <button class="sw" data-hex="#3a3528" style="border:1px solid #d8d2c0;border-radius:12px;overflow:hidden;cursor:pointer;background:#fbfaf6;text-align:left;padding:0;font:inherit;color:inherit;"><div style="height:74px;background:#3a3528;"></div><div style="padding:10px 12px;"><div style="font-size:13px;font-weight:500;">Ink Body</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#6b6552;">#3a3528</div></div></button>
+      <button class="sw" data-hex="#6b6552" style="border:1px solid #d8d2c0;border-radius:12px;overflow:hidden;cursor:pointer;background:#fbfaf6;text-align:left;padding:0;font:inherit;color:inherit;"><div style="height:74px;background:#6b6552;"></div><div style="padding:10px 12px;"><div style="font-size:13px;font-weight:500;">Ink Muted</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#6b6552;">#6b6552</div></div></button>
+    </div>
+
+    <div style="font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#0050d6;margin:26px 0 14px;">Institutional Blue</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;">
+      <button class="sw" data-hex="#0050d6" style="border:1px solid #d8d2c0;border-radius:12px;overflow:hidden;cursor:pointer;background:#fbfaf6;text-align:left;padding:0;font:inherit;color:inherit;"><div style="height:74px;background:#0050d6;"></div><div style="padding:10px 12px;"><div style="font-size:13px;font-weight:500;">Primary Blue</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#6b6552;">#0050d6</div></div></button>
+      <button class="sw" data-hex="#003fa8" style="border:1px solid #d8d2c0;border-radius:12px;overflow:hidden;cursor:pointer;background:#fbfaf6;text-align:left;padding:0;font:inherit;color:inherit;"><div style="height:74px;background:#003fa8;"></div><div style="padding:10px 12px;"><div style="font-size:13px;font-weight:500;">Deep Blue</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#6b6552;">#003fa8</div></div></button>
+      <button class="sw" data-hex="#5b9dff" style="border:1px solid #d8d2c0;border-radius:12px;overflow:hidden;cursor:pointer;background:#fbfaf6;text-align:left;padding:0;font:inherit;color:inherit;"><div style="height:74px;background:#5b9dff;"></div><div style="padding:10px 12px;"><div style="font-size:13px;font-weight:500;">Soft Blue</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#6b6552;">#5b9dff</div></div></button>
+      <button class="sw" data-hex="#4d8fff" style="border:1px solid #d8d2c0;border-radius:12px;overflow:hidden;cursor:pointer;background:#fbfaf6;text-align:left;padding:0;font:inherit;color:inherit;"><div style="height:74px;background:#4d8fff;"></div><div style="padding:10px 12px;"><div style="font-size:13px;font-weight:500;">Glow Blue</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#6b6552;">#4d8fff</div></div></button>
+    </div>
+
+    <div style="font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#0050d6;margin:26px 0 14px;">Dark grounds</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;">
+      <button class="sw" data-hex="#0a0c10" style="border:1px solid #d8d2c0;border-radius:12px;overflow:hidden;cursor:pointer;background:#fbfaf6;text-align:left;padding:0;font:inherit;color:inherit;"><div style="height:74px;background:#0a0c10;"></div><div style="padding:10px 12px;"><div style="font-size:13px;font-weight:500;">Hero</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#6b6552;">#0a0c10</div></div></button>
+      <button class="sw" data-hex="#0c0e13" style="border:1px solid #d8d2c0;border-radius:12px;overflow:hidden;cursor:pointer;background:#fbfaf6;text-align:left;padding:0;font:inherit;color:inherit;"><div style="height:74px;background:#0c0e13;"></div><div style="padding:10px 12px;"><div style="font-size:13px;font-weight:500;">Panel</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#6b6552;">#0c0e13</div></div></button>
+      <button class="sw" data-hex="#060d1e" style="border:1px solid #d8d2c0;border-radius:12px;overflow:hidden;cursor:pointer;background:#fbfaf6;text-align:left;padding:0;font:inherit;color:inherit;"><div style="height:74px;background:#060d1e;"></div><div style="padding:10px 12px;"><div style="font-size:13px;font-weight:500;">Navy Bridge</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#6b6552;">#060d1e</div></div></button>
+      <button class="sw" data-hex="#04080f" style="border:1px solid #d8d2c0;border-radius:12px;overflow:hidden;cursor:pointer;background:#fbfaf6;text-align:left;padding:0;font:inherit;color:inherit;"><div style="height:74px;background:#04080f;"></div><div style="padding:10px 12px;"><div style="font-size:13px;font-weight:500;">Deepest</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#6b6552;">#04080f</div></div></button>
+    </div>
+  </div>
+  <p style="margin:18px 0 0;font-size:13.5px;color:#756f5e;line-height:1.6;">Status colors (amber, green, red, teal, violet) are data-viz only — never brand accents. On dark, text is always cream <span style="font-family:'Geist Mono',monospace;font-size:12.5px;color:#3a3528;">#fbfaf6</span> at descending opacity. Full <a href="tokens/contrast.md" style="color:#0050d6;text-decoration:none;">contrast reference →</a></p>
+</section>
+
+<!-- ===== TYPOGRAPHY ===== -->
+<section id="type" style="background:#0a0c10;color:#fbfaf6;scroll-margin-top:72px;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.04) 1px,transparent 1px);background-size:30px 30px;pointer-events:none;"></div>
+  <div style="position:relative;max-width:1140px;margin:0 auto;padding:80px 32px;">
+    <div style="display:flex;align-items:center;gap:13px;margin-bottom:16px;"><span style="width:30px;height:1px;background:rgba(251,250,246,0.3);display:block;"></span><span style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.16em;font-size:11px;color:rgba(251,250,246,0.55);">Typography</span></div>
+    <h2 style="margin:0;font-family:Geist,sans-serif;font-weight:600;font-size:clamp(28px,4vw,40px);letter-spacing:-0.03em;line-height:1.08;max-width:760px;">Three voices, one <span style="font-family:Merriweather,serif;font-weight:400;font-style:italic;color:#5b9dff;">deliberate system</span></h2>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:34px;">
+      <div style="border:1px solid #1b2030;border-radius:14px;background:#0c0e13;padding:24px 26px;">
+        <div style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;font-size:10px;color:rgba(251,250,246,0.5);">Geist · digital voice</div>
+        <div style="font-family:Geist,sans-serif;font-weight:600;font-size:28px;letter-spacing:-0.03em;margin-top:12px;">Capital markets, on-chain.</div>
+        <div style="font-size:13px;color:rgba(251,250,246,0.6);line-height:1.55;margin-top:12px;">Body, UI labels, and the sans lead-in of every headline. Display at weight 600.</div>
+      </div>
+      <div style="border:1px solid #1b2030;border-radius:14px;background:#0c0e13;padding:24px 26px;">
+        <div style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;font-size:10px;color:rgba(251,250,246,0.5);">Merriweather · TradFi voice</div>
+        <div style="font-family:Merriweather,serif;font-style:italic;font-size:27px;color:#5b9dff;margin-top:12px;">the operating layer</div>
+        <div style="font-size:13px;color:rgba(251,250,246,0.6);line-height:1.55;margin-top:12px;">Only the headline italic phrase, editorial titles, and large stat figures.</div>
+      </div>
+      <div style="border:1px solid #1b2030;border-radius:14px;background:#0c0e13;padding:24px 26px;">
+        <div style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;font-size:10px;color:rgba(251,250,246,0.5);">Geist Mono · terminal voice</div>
+        <div style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.06em;font-size:16px;color:#5b9dff;margin-top:14px;">Preparing access · Q3 2026</div>
+        <div style="font-size:13px;color:rgba(251,250,246,0.6);line-height:1.55;margin-top:14px;">Kickers, tags, data labels, dates, meta. Uppercase, tracked, small.</div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #1b2030;border-radius:14px;background:linear-gradient(180deg,#0c0e13,#0a0c10);padding:30px 32px;margin-top:14px;">
+      <div style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.14em;font-size:10px;color:#5b9dff;margin-bottom:16px;">The signature headline</div>
+      <div style="font-family:Geist,sans-serif;font-weight:600;font-size:clamp(24px,3.4vw,34px);letter-spacing:-0.03em;line-height:1.1;">Insights from the <span style="font-family:Merriweather,serif;font-weight:400;font-style:italic;color:#5b9dff;">Operating Layer</span></div>
+      <div style="font-size:14px;color:rgba(251,250,246,0.6);line-height:1.6;margin-top:16px;max-width:640px;">Geist sans lead-in + one Merriweather italic phrase in the accent color. One phrase only — the single most recognizable element of the brand. Fallbacks for vendors: Geist → Helvetica/Arial, Merriweather → Georgia, Geist Mono → SF Mono/Consolas.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VOICE ===== -->
+<section id="voice" style="max-width:1140px;margin:0 auto;padding:80px 32px 64px;scroll-margin-top:72px;">
+  <div style="display:flex;align-items:center;gap:13px;margin-bottom:16px;"><span style="width:30px;height:1px;background:#bdb59b;display:block;"></span><span style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.16em;font-size:11px;color:#6b6552;">Voice</span></div>
+  <h2 style="margin:0;font-family:Geist,sans-serif;font-weight:600;font-size:clamp(28px,4vw,40px);letter-spacing:-0.03em;line-height:1.08;max-width:760px;">Write like an operator, not a <span style="font-family:Merriweather,serif;font-weight:400;font-style:italic;color:#0050d6;">crypto promoter</span></h2>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:32px;">
+    <div style="border:1px solid #d8d2c0;border-radius:14px;background:#f0ede4;padding:22px 24px;"><div style="font-family:Geist,sans-serif;font-weight:600;font-size:22px;letter-spacing:-0.02em;">Institutional</div><div style="font-size:13.5px;color:#6b6552;line-height:1.55;margin-top:5px;">Real markets infrastructure. Capital at scale deserves seriousness.</div></div>
+    <div style="border:1px solid #d8d2c0;border-radius:14px;background:#f0ede4;padding:22px 24px;"><div style="font-family:Geist,sans-serif;font-weight:600;font-size:22px;letter-spacing:-0.02em;">Precise</div><div style="font-size:13.5px;color:#6b6552;line-height:1.55;margin-top:5px;">Operating language. Numbers stated plainly, with qualification.</div></div>
+    <div style="border:1px solid #d8d2c0;border-radius:14px;background:#f0ede4;padding:22px 24px;"><div style="font-family:Geist,sans-serif;font-weight:600;font-size:22px;letter-spacing:-0.02em;">Forward</div><div style="font-size:13.5px;color:#6b6552;line-height:1.55;margin-top:5px;">Actively deploying, not vaporware. Momentum through craft.</div></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:14px;">
+    <div style="border:1px solid #a7d3b4;border-radius:14px;background:#eef7f0;padding:20px 22px;"><div style="font-family:'Geist Mono',monospace;font-size:9px;letter-spacing:0.12em;color:#12a05c;text-transform:uppercase;margin-bottom:9px;">✓ On-brand</div><div style="font-size:14px;line-height:1.55;color:#3a3528;">CipheX Alpha runs autonomous execution through the Abigail system — your capital, working 24/7, non-custodial.</div></div>
+    <div style="border:1px solid #e3b3ac;border-radius:14px;background:#faf1ef;padding:20px 22px;"><div style="font-family:'Geist Mono',monospace;font-size:9px;letter-spacing:0.12em;color:#c0392b;text-transform:uppercase;margin-bottom:9px;">✕ Off-brand</div><div style="font-size:14px;line-height:1.55;color:#3a3528;">&ldquo;🚀 CPX is about to EXPLODE, get in before it moons! Guaranteed gains 🔥&rdquo;</div></div>
+  </div>
+  <p style="margin:18px 0 0;font-size:13.5px;color:#756f5e;line-height:1.6;">Product names (CPX, CipheX Alpha, Atlas, Cipherion, Abigail) are fixed — don&rsquo;t paraphrase. The full voice principles and caption examples live in the <a href="ciphex-brand-design-guide.pdf" style="color:#0050d6;text-decoration:none;">Brand Design Guide</a>.</p>
+</section>
+
+<!-- ===== BUILD / DEVELOPERS ===== -->
+<section id="build" style="max-width:1140px;margin:0 auto;padding:48px 32px 72px;scroll-margin-top:72px;">
+  <div style="display:flex;align-items:center;gap:13px;margin-bottom:16px;"><span style="width:30px;height:1px;background:#bdb59b;display:block;"></span><span style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.16em;font-size:11px;color:#6b6552;">Build</span></div>
+  <h2 style="margin:0;font-family:Geist,sans-serif;font-weight:600;font-size:clamp(28px,4vw,40px);letter-spacing:-0.03em;line-height:1.08;max-width:760px;">Built to <span style="font-family:Merriweather,serif;font-weight:400;font-style:italic;color:#0050d6;">drop in</span></h2>
+  <p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#3a3528;max-width:620px;">Copy the files you need. Color, type, and opacity ship as design tokens, and the brand is machine-readable so AI tools stay on-brand.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px;margin-top:32px;">
+    <div style="border:1px solid #d8d2c0;border-radius:14px;background:#f0ede4;padding:22px 24px;">
+      <div style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;font-size:10px;color:#0050d6;margin-bottom:12px;">Use</div>
+      <div style="background:#0a0c10;border-radius:9px;padding:13px 15px;font-family:'Geist Mono',monospace;font-size:12.5px;color:rgba(251,250,246,0.85);overflow-x:auto;line-height:1.7;">&lt;link rel=<span style="color:#5b9dff;">"stylesheet"</span> href=<span style="color:#5b9dff;">"tokens/fonts.css"</span>&gt;<br>&lt;link rel=<span style="color:#5b9dff;">"stylesheet"</span> href=<span style="color:#5b9dff;">"tokens/variables.css"</span>&gt;</div>
+      <div style="font-size:13.5px;color:#6b6552;line-height:1.55;margin-top:12px;">Reference the files directly — CSS variables (<span style="font-family:'Geist Mono',monospace;font-size:12.5px;">--cpx-*</span>) for color, type &amp; opacity. A Tailwind v4 preset (<span style="font-family:'Geist Mono',monospace;font-size:12.5px;">tokens/tailwind.css</span>) and SCSS mirror are included too.</div>
+    </div>
+    <div style="border:1px solid #d8d2c0;border-radius:14px;background:#f0ede4;padding:22px 24px;">
+      <div style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;font-size:10px;color:#0050d6;margin-bottom:12px;">Tokens</div>
+      <div style="font-size:14px;color:#3a3528;line-height:1.6;">Color, type &amp; opacity as W3C design tokens (<span style="font-family:'Geist Mono',monospace;font-size:12.5px;">tokens.json</span>) with CSS + SCSS mirrors — one source of truth.</div>
+      <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:14px;"><a class="codelink" href="tokens/" style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.06em;color:#0050d6;text-decoration:none;">tokens/ →</a><a class="codelink" href="tokens/contrast.md" style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.06em;color:#0050d6;text-decoration:none;">contrast.md →</a></div>
+    </div>
+    <div style="border:1px solid #d8d2c0;border-radius:14px;background:#f0ede4;padding:22px 24px;">
+      <div style="font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;font-size:10px;color:#0050d6;margin-bottom:12px;">AI-ready</div>
+      <div style="font-size:14px;color:#3a3528;line-height:1.6;">A machine-readable manifest and an LLM brief so AI tools generate on-brand copy and design. Point your agent at them.</div>
+      <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:14px;"><a class="codelink" href="brand.json" style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.06em;color:#0050d6;text-decoration:none;">brand.json →</a><a class="codelink" href="llms.txt" style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.06em;color:#0050d6;text-decoration:none;">llms.txt →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer style="background:#0a0c10;color:#fbfaf6;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.04) 1px,transparent 1px);background-size:30px 30px;pointer-events:none;"></div>
+  <div style="position:relative;max-width:1140px;margin:0 auto;padding:56px 32px 64px;">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;align-items:flex-end;">
+      <div>
+        <img src="assets/logo/ciphex-wordmark-white.svg" alt="CipheX" style="height:20px;margin-bottom:16px;" />
+        <div style="font-size:14px;line-height:1.7;color:rgba(251,250,246,0.6);">Review &amp; asset requests: <a href="mailto:brand@ciphex.io" style="color:#5b9dff;text-decoration:none;">brand@ciphex.io</a><br>Living reference: <a href="https://ciphex.io" style="color:#5b9dff;text-decoration:none;">ciphex.io</a></div>
+      </div>
+      <div style="display:flex;gap:26px;">
+        <a class="footlink" href="https://github.com/Cipherion-Market-Research/Ciphex-Brand-Kit" style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(251,250,246,0.7);text-decoration:none;">Repository ↗</a>
+        <a class="footlink" href="ciphex-brand-design-guide.pdf" style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(251,250,246,0.7);text-decoration:none;">Design guide ↗</a>
+      </div>
+    </div>
+    <div style="margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.08);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(251,250,246,0.4);">
+      <span>Digital Finance Meets Traditional Finance</span><span>Proprietary brand assets · v1.0 · 2026</span>
+    </div>
+  </div>
+</footer>
+
+<div id="cpx-toast" style="position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(12px);background:#1c1e24;color:#fbfaf6;padding:10px 18px;border-radius:999px;font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:0.04em;opacity:0;transition:opacity .2s ease,transform .2s ease;pointer-events:none;z-index:100;">Copied</div>
+
+<script>
+  (function () {
+    var toast = document.getElementById('cpx-toast');
+    var palette = document.getElementById('palette');
+    var t;
+    palette.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-hex]');
+      if (!b) return;
+      var hex = b.getAttribute('data-hex');
+      if (navigator.clipboard) { try { navigator.clipboard.writeText(hex); } catch (_) {} }
+      toast.textContent = 'Copied ' + hex;
+      toast.style.opacity = '1';
+      toast.style.transform = 'translateX(-50%) translateY(0)';
+      clearTimeout(t);
+      t = setTimeout(function () {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateX(-50%) translateY(12px)';
+      }, 1300);
+    });
+  })();
+</script>
+</body>
+</html>

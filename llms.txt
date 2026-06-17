@@ -1,0 +1,61 @@
+# CipheX Brand Kit
+
+> CipheX is capital-markets infrastructure for the tokenized economy, bridging traditional finance
+> and digital assets (an ecosystem by Cipherion; pre-commercial, target 2026–2027). This file briefs
+> AI tools so generated copy, design, and assets stay on-brand. Authoritative rules live in the
+> CipheX Brand Design Guide; this is a faithful summary. When in doubt, route through brand@ciphex.io.
+
+## Identity
+
+- Name: **CipheX** (capital C, capital X). Parent brand: **Cipherion**.
+- Tagline: "Digital finance meets traditional finance."
+- Personality: **Institutional · Precise · Forward.**
+
+## Voice
+
+- **Write like an operator, not a crypto promoter.** Confident, plain, factual.
+- Lead with operating language; state numbers plainly, with qualification.
+- Avoid hype, vaporware, and "to the moon" framing. No crypto-promoter tone.
+- Signature headline is mixed-typeface: a sans line with a single italic emphasis phrase.
+
+## Ecosystem (use the right name)
+
+- **CPX** — ERC-20 ecosystem & utility token.
+- **CipheX Alpha** — autonomous execution & portfolio management via the Abigail system. Non-custodial.
+- **Atlas** — real-world asset (RWA) origination, tokenization & global distribution.
+- **Cipherion** — the parent infrastructure brand, credited beneath the ecosystem.
+
+## Color
+
+- Warm **cream** grounds (`#fbfaf6`) — never pure white, never pure black.
+- One accent: **institutional blue** (`#0050d6`) — links, CTAs, the one emphatic moment. Used decisively.
+- On dark grounds (`#0a0c10`), text is cream stepped down in opacity (0.92/0.72/0.55/0.45), never grey; use Soft Blue (`#5b9dff`) for blue on dark.
+- Status colors (amber, green, red, teal, violet) are functional / data-viz only — **never** brand accents.
+- Machine-readable values: [tokens/tokens.json](tokens/tokens.json).
+
+## Typography
+
+- **Geist** — digital voice: body, UI, the sans part of headlines.
+- **Merriweather** — traditional-finance voice: the italic emphasis phrase, editorial titles, stat figures.
+- **Geist Mono** — terminal voice: eyebrows, tags, data labels, dates. Always uppercase.
+
+## Imagery
+
+- Favor: geometry, structured data-viz, abstract token device, cream-on-navy / blue fields.
+- Avoid: gold coins, hooded "hacker" figures, glowing circuit boards, neon cyber cities, rockets, glassmorphism.
+
+## Files
+
+- [README.md](README.md): asset index and how the kit connects to the guide.
+- [brand.json](brand.json): full machine-readable brand manifest.
+- [tokens/](tokens/): colors, typography, opacity as design tokens (DTCG + CSS + SCSS + Tailwind).
+- [assets/](assets/): logos, X-monogram, product marks, favicons (SVG + PNG).
+- [LICENSE](LICENSE): proprietary brand-asset terms.
+
+## Rules for generating on-brand output
+
+1. Use the exact ecosystem names above; don't invent product names.
+2. One blue accent per layout. Never use status colors decoratively.
+3. Cream grounds + warm ink, or dark navy-biased grounds + cream text. No pure #fff / #000.
+4. Operator voice, not promoter. No price/return hype.
+5. Don't modify, recolor, or recreate the logo marks. Route final copy through brand review.

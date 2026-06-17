@@ -1,0 +1,23 @@
+{
+  "$comment": "Style Dictionary v4 config. Regenerates variables.css and variables.scss from tokens.json (DTCG format). Run: npm run build:tokens (from repo root). Requires style-dictionary ^4.",
+  "source": ["tokens/tokens.json"],
+  "usesDtcg": true,
+  "platforms": {
+    "css": {
+      "transformGroup": "css",
+      "prefix": "cpx",
+      "buildPath": "tokens/",
+      "files": [
+        { "destination": "variables.css", "format": "css/variables", "options": { "outputReferences": true } }
+      ]
+    },
+    "scss": {
+      "transformGroup": "scss",
+      "prefix": "cpx",
+      "buildPath": "tokens/",
+      "files": [
+        { "destination": "variables.scss", "format": "scss/variables", "options": { "outputReferences": true } }
+      ]
+    }
+  }
+}

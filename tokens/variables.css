@@ -1,0 +1,89 @@
+/**
+ * CipheX design tokens — CSS custom properties.
+ * Generated from tokens.json (the source of truth). Values follow the
+ * CipheX Brand Design Guide §03 Color and §04 Typography.
+ *
+ * Usage:
+ *   @import "ciphex-brand-kit/tokens/variables.css";
+ *   body  { background: var(--cpx-bg); color: var(--cpx-text); }
+ *   a     { color: var(--cpx-accent); }
+ *   <body data-theme="dark"> flips semantic vars to the dark grounds.
+ */
+
+:root {
+  /* Brand blue — one accent, used decisively */
+  --cpx-blue-primary: #0050d6; /* links, CTAs, highlights */
+  --cpx-blue-deep:    #003fa8; /* hover, badges */
+  --cpx-blue-soft:    #5b9dff; /* headings on dark */
+  --cpx-blue-glow:    #4d8fff; /* focus on dark */
+
+  /* Warm grounds & panels (light) */
+  --cpx-cream:   #fbfaf6;
+  --cpx-surface: #f0ede4;
+  --cpx-sand:    #e8e2d6;
+
+  /* Ink (text on cream) */
+  --cpx-ink-primary: #1c1e24;
+  --cpx-ink-body:    #3a3528;
+  --cpx-ink-muted:   #6b6552;
+  --cpx-ink-subtle:  #756f5e;
+
+  /* Dark grounds (cool, deep-navy bias) */
+  --cpx-dark-hero:         #0a0c10;
+  --cpx-dark-panel:        #0c0e13;
+  --cpx-dark-product-hero: #0d0f14;
+  --cpx-dark-navy-bridge:  #060d1e;
+  --cpx-dark-deepest:      #04080f;
+
+  /* Status — functional / data-viz only, never brand accents */
+  --cpx-status-amber:   #d29922;
+  --cpx-status-gold:    #836a1c;
+  --cpx-status-success: #3fb950;
+  --cpx-status-danger:  #c0392b;
+  --cpx-status-teal:    #00a67e;
+  --cpx-status-violet:  #5b2be2;
+
+  /* Cream-text opacity ramp (apply to cream on dark grounds) */
+  --cpx-text-opacity-primary: 0.92;
+  --cpx-text-opacity-body:    0.72;
+  --cpx-text-opacity-muted:   0.55;
+  --cpx-text-opacity-subtle:  0.45;
+
+  /* Typography */
+  --cpx-font-sans:  "Geist", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --cpx-font-serif: "Merriweather", Georgia, Cambria, "Times New Roman", serif;
+  --cpx-font-mono:  "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --cpx-weight-light:     300;
+  --cpx-weight-regular:   400;
+  --cpx-weight-medium:    500;
+  --cpx-weight-semibold:  600; /* display headings */
+  --cpx-weight-bold:      700;
+  --cpx-weight-extrabold: 800;
+
+  --cpx-tracking-display: -0.03em; /* display headings (Geist 600) */
+  --cpx-tracking-mono:    -0.14em; /* Geist Mono labels, uppercase */
+  --cpx-leading-display:  1.05;    /* 1.05–1.1 */
+
+  /* ---- Semantic (light is the default theme) ---- */
+  --cpx-bg:           var(--cpx-cream);
+  --cpx-bg-raised:    var(--cpx-surface);
+  --cpx-text:         var(--cpx-ink-primary);
+  --cpx-text-body:    var(--cpx-ink-body);
+  --cpx-text-muted:   var(--cpx-ink-muted);
+  --cpx-accent:       var(--cpx-blue-primary);
+  --cpx-accent-hover: var(--cpx-blue-deep);
+  --cpx-focus:        var(--cpx-blue-glow);
+}
+
+/* ---- Dark theme: cream text stepped down in opacity, never grey ---- */
+[data-theme="dark"] {
+  --cpx-bg:           var(--cpx-dark-hero);
+  --cpx-bg-raised:    var(--cpx-dark-panel);
+  --cpx-text:         rgba(251, 250, 246, var(--cpx-text-opacity-primary));
+  --cpx-text-body:    rgba(251, 250, 246, var(--cpx-text-opacity-body));
+  --cpx-text-muted:   rgba(251, 250, 246, var(--cpx-text-opacity-muted));
+  --cpx-accent:       var(--cpx-blue-soft);  /* headings/links read better on dark */
+  --cpx-accent-hover: var(--cpx-blue-primary);
+  --cpx-focus:        var(--cpx-blue-glow);
+}
